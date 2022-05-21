@@ -1,0 +1,119 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super App</title>
+
+    <!-- browser them color-->
+    <meta name="theme-color" content="#fff">
+
+    <!-- description -->
+    <meta name="description" content="Super app for home automation using Wifi">
+
+
+    <!-- author -->
+    <meta name="author" content="Vishal Kumar Sankhyan">
+
+    <!-- browser tap icon
+    <link rel="shortcut icon" href="to_do_list_app.ico" type="image/x-icon">
+
+    manifest-->
+   <!-- <link rel="manifest" href="manifest.json">-->
+
+    <!--ios support-->
+    <!-- <link rel="apple-touch-icon" href="to_do_list_app_icon_64X64.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_72X72.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_96X96.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_128X128.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_144X144.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_152X152.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_192X192.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_256X256.png">
+    <link rel="apple-touch-icon" href="to_do_list_app_icon_512X512.png">
+    -->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <div class="super_app_app_body">
+
+        <div class="super_app_app_navbar">
+            <div class="super_app_title">
+                Super App
+            </div>
+
+            <div class="super_app_menu_dots">
+                <div class="super_app_menu_dot"></div>
+                <div class="super_app_menu_dot_middle"></div>
+                <div class="super_app_menu_dot"></div>
+            </div>
+        </div>
+
+        <div class="super_app_dot_menu_section">
+            <div class="super_app_dot_menu_option" onclick="super_app_info_open_function()">
+                Info
+            </div>
+        </div>
+
+        <div class="super_app_info_section" onclick="super_app_info_close_function()">
+            <div class="super_app_info_section_box">
+                <div class="super_app_info_section_box_header">
+                    Info
+                </div>
+                <div class="super_app_info_section_box_detail">
+                    App Name : Super App
+                    <br>
+                    Developed by VKS
+                    <br>
+                    Version : 1.0
+                    <br>
+                </div>
+            </div>
+        </div>
+        
+        
+      <div class ="super_app_content">
+        <div class="super_app_switch_box">
+        
+        <label class="toggle-switchy toogle_switch_one" for="example_rounded_1" data-size="xl" data-style="rounded">
+					<input type="checkbox" id="example_rounded_1">
+						<span class="toggle">
+							<span class="switch"></span>
+						</span>
+			  </label>
+			  
+			  <label class="toggle-switchy toogle_switch_two" for="example_rounded_2" data-size="xl" data-style="rounded">
+					<input  type="checkbox" id="example_rounded_2">
+						<span class="toggle">
+							<span class="switch"></span>
+						</span>
+			  </label>
+        
+        </div>
+        
+        <div class="super_app_mic_box">
+        
+          <div class="super_app_search_mice_btn" onclick="jsSpeechRecognitionRecognition()">
+            <div class="super_app_search_mice_main_btn" onclick="voice_search_start_stop()">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="microphone"
+                class="svg-inline--fa fa-microphone fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 352 512">
+                <path fill="currentColor"
+                  d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z">
+                </path>
+              </svg>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
