@@ -3,13 +3,9 @@ var cachefiles = [
     'https://vishalkumarsankhyan.github.io/super_app_github.io/',/*url*/
     'https://vishalkumarsankhyan.github.io/super_app_github.io/index.html',
     'https://vishalkumarsankhyan.github.io/super_app_github.io/styles.css',
-    'https://vishalkumarsankhyan.github.io/super_app_github.io/script.js,
-    
+    'https://vishalkumarsankhyan.github.io/super_app_github.io/script.js',
     'https://vishalkumarsankhyan.github.io/super_app_github.io/service_worker.js',
-
-    'https://vishalkumarsankhyan.github.io/super_app_github.io/home-automation.ico,
-
-
+    'https://vishalkumarsankhyan.github.io/super_app_github.io/home-automation.ico',
     'https://vishalkumarsankhyan.github.io/super_app_github.io/home_automation_128x128.png',
     'https://vishalkumarsankhyan.github.io/super_app_github.io/home_automation_144x144.png',
     'https://vishalkumarsankhyan.github.io/super_app_github.io/home_automation_152x152.png',
