@@ -195,14 +195,15 @@ body::-webkit-scrollbar{
 }
 
 .super_app_content{
-  height:100%;
+  heigh:100%;
 }
 
 .super_app_switch_box{
   display:flex;
-  height:100px;
+  height:250px;
   padding:0px 50px;
   justify-content:space-between;
+  
 }
 
 .toogle_switch_one{
@@ -211,6 +212,23 @@ body::-webkit-scrollbar{
 
 .toogle_switch_two{
   margin:0 12px;
+}
+
+.super_app_mic_main_box{
+  position:absolute;
+  bottom:1px;
+  left:0px;
+  right:0px;
+}
+
+@media only screen and (max-height:350px) {
+  .super_app_mic_main_box{
+    position:relative;
+  }
+  
+  .super_app_switch_box{
+    height:150px;
+  }
 }
 
 .super_app_mic_box{
