@@ -28,17 +28,17 @@ recognition.onresult = function(event) {
       
   if (transcript == "turn on light to"){
     example_rounded_2.checked = true;
-    super_app_speak ("turn on light to");
+    super_app_speak ("turning on light Two");
   }
       
   if (transcript == "turn off light one" ){
     example_rounded_1.checked = false;
-    super_app_speak ("turn off light one");
+    super_app_speak ("turning off light one");
   }
       
   if (transcript == "turn off light Tu" || transcript == "turn off light Tu"){
     example_rounded_2.checked = false;
-    super_app_speak ("turn off light Tu");
+    super_app_speak ("turning off light Two");
   }
       
 };
@@ -49,6 +49,7 @@ recognition.onspeechend = function() {
   recognition.stop();
 }
     
+
 
 super_app_info_section = document.querySelector('.super_app_info_section');
 
