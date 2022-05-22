@@ -1,3 +1,18 @@
+/* PWA  code start*/
+if ("serviceWorker" in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('https://vishalkumarsankhyan.github.io/super_app_github.io/service_worker.js',
+').then(() => {
+      console.log('Service Worker Registered')
+    })
+  })
+}
+/* PWA  code end*/
+
+window.document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+})
+
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
 var recognition = new SpeechRecognition();
     
