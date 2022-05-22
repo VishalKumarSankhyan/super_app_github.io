@@ -1,9 +1,10 @@
+var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+var recognition = new SpeechRecognition();
+    
 
 example_rounded_1 = document.querySelector('#example_rounded_1');
 
 example_rounded_2 = document.querySelector('#example_rounded_2');
-
-/*example_rounded_1.checked = true;*/
 
 
 function super_app_speak(s_data){
@@ -17,6 +18,37 @@ function super_app_speak(s_data){
   window.speechSynthesis.speak(speak);
 }
 
+recognition.onresult = function(event) {
+  var transcript = event.results[0][0].transcript;
+      
+  if (transcript == "turn on light one"){
+    example_rounded_1.checked = true;
+    super_app_speak("turning on light one");
+  }
+      
+  if (transcript == "turn on light to"){
+    example_rounded_2.checked = true;
+    super_app_speak ("turn on light to");
+  }
+      
+  if (transcript == "turn off light one" ){
+    example_rounded_1.checked = false;
+    super_app_speak ("turn off light one");
+  }
+      
+  if (transcript == "turn off light Tu" || transcript == "turn off light Tu"){
+    example_rounded_2.checked = false;
+    super_app_speak ("turn off light Tu");
+  }
+      
+};
+
+recognition.onspeechend = function() {
+  super_app_search_mice_btn.classList.remove('open');
+  super_app_mic_active = false;
+  recognition.stop();
+}
+    
 
 super_app_info_section = document.querySelector('.super_app_info_section');
 
@@ -60,37 +92,13 @@ var super_app_mic_active= false;
 super_app_search_mice_btn.addEventListener('click' , function (){
   if(super_app_mic_active == false){
     super_app_search_mice_btn.classList.add('open');
-    
-    /*super_app_speak("say something");*/
-    
     super_app_mic_active = true;
-    
-    var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-    var recognition = new SpeechRecognition();
-    
-    recognition.onspeechend = function() {
-      super_app_search_mice_btn.classList.remove('open');
-      super_app_mic_active = false;
-      recognition.stop();
-    }
-    
-    recognition.onresult = function(event) {
-      var transcript = event.results[0][0].transcript;
-      
-      if (transcript == "turn on light one"){
-        example_rounded_1.checked = true;
-        super_app_speak("turning on light one");
-      }
-      
-    };
-    
     recognition.start();
     
   }
   else if (super_app_mic_active == true){
     super_app_search_mice_btn.classList.remove('open');
     super_app_mic_active = false;
-    
     recognition.stop();
   }
 })
