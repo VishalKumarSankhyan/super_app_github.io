@@ -1,8 +1,7 @@
 /* PWA  code start*/
 if ("serviceWorker" in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('https://vishalkumarsankhyan.github.io/super_app_github.io/service_worker.js',
-').then(() => {
+    navigator.serviceWorker.register('https://vishalkumarsankhyan.github.io/super_app_github.io/service_worker.js').then(() => {
       console.log('Service Worker Registered')
     })
   })
