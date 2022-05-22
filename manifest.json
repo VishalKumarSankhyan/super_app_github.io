@@ -3,8 +3,8 @@
     "short_name": "Super App",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#0099ff",
-    "theme_color": "#0099ff",
+    "background_color": "#ffff",
+    "theme_color": "#ffff",
     "orientation": "portrait-primary",
     "icons": [
  
@@ -22,20 +22,18 @@
             "src": "home_automation_152x152.png",
             "type": "image/png",
             "sizes": "152x152"
- 
- 
         },
 
         {
             "src": "home_automation_256x256.png",
             "type": "image/png",
-            "sizes": "256x256",
-            "purpose":"any maskable"
+            "sizes": "256x256"
         },
         {
             "src": "home_automation_512x512.png",
             "type": "image/png",
-            "sizes": "512x512"
+            "sizes": "512x512",
+            "purpose":"any maskable"
         }
     ]
 }
