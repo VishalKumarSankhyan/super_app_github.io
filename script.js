@@ -36,25 +36,37 @@ recognition.onresult = function(event) {
   var transcript = event.results[0][0].transcript;
       
   if (transcript == "turn on light one"){
-    example_rounded_1.checked = true;
     super_app_speak("turning on light one");
+    example_rounded_1.checked = true;
   }
       
   if (transcript == "turn on light to"){
-    example_rounded_2.checked = true;
     super_app_speak ("turning on light Two");
+    example_rounded_2.checked = true;
   }
       
   if (transcript == "turn off light one" ){
-    example_rounded_1.checked = false;
     super_app_speak ("turning off light one");
+    example_rounded_1.checked = false;
   }
       
   if (transcript == "turn off light Tu" || transcript == "turn off light Tu"){
-    example_rounded_2.checked = false;
     super_app_speak ("turning off light Two");
+    example_rounded_2.checked = false;
   }
-      
+
+  if (transcript == "turn on all light"){
+    super_app_speak ("turning on all light");
+    example_rounded_1.checked = true;
+    example_rounded_2.checked = true;
+  }
+
+  if (transcript == "turn off all light"){
+    super_app_speak ("turning off all light");
+    example_rounded_1.checked = false;
+    example_rounded_2.checked = false;
+  }
+     
 };
 
 recognition.onspeechend = function() {
